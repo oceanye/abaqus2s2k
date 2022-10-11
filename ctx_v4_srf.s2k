@@ -1,0 +1,739 @@
+File D:\SAPWorkDir\JN-GTC.s2k was saved on m/d/yy at h:mm:ss
+Hello, world! This s2k file was created by python.
+Author: DalNur/LiYang; Email: liyang@alu.hit.edu.cn
+Time: 2022-10-10 21:31:05.
+
+TABLE:  "PROGRAM CONTROL"
+   ProgramName=SAP2000   Version=21.0.2   CurrUnits="N, mm, C"
+
+TABLE:  "COORDINATE SYSTEMS"
+   Name=GLOBAL   Type=Cartesian   X=0   Y=0   Z=0   AboutZ=0   AboutY=0   AboutX=0
+
+TABLE:  "MATERIAL PROPERTIES 01 - GENERAL"
+   Material=DalNur   Type=Steel   SymType=Isotropic   TempDepend=No   Color=Blue
+
+TABLE:  "MATERIAL PROPERTIES 02 - BASIC MECHANICAL PROPERTIES"
+   Material=DalNur   UnitWeight=76.970   UnitMass=7.849   E1=200000000.000   G12=76923076.9230769   U12=0.3   A1=6.5E-09
+
+TABLE:  "MATERIAL PROPERTIES 03A - STEEL DATA"
+   Material=DalNur   Fy=345000.000   Fu=490000.000   EffFy=379500.000   EffFu=539000.000   SSCurveOpt=Simple   SSHysType=Kinematic   SHard=0.015   SMax=0.11   SRup=0.17   FinalSlope=-0.1
+
+TABLE:  "FRAME SECTION PROPERTIES 01 - GENERAL"
+    SectionName=P400x20   Material=DalNur   Shape=Pipe   t3=400   tw=20   Area=0   TorsConst=0   I33=0   I22=0   I23=0   AS2=0 _
+         AS3=0   S33=0   S22=0   Z33=0   Z22=0   R33=0   R22=0   ConcCol=No   ConcBeam=No   Color=Blue _
+         TotalWt=0   TotalMass=0   FromFile=No   AMod=1   A2Mod=1   A3Mod=1   JMod=1   I2Mod=1   I3Mod=1   MMod=1   WMod=1
+
+TABLE:  "AREA SECTION PROPERTIES"
+    Section=S150   Material=DalNur   MatAngle=0   AreaType=Shell   Type=Shell-Thin   DrillDOF=Yes   Thickness=150   BendThick=150   Color=Blue   F11Mod=1   F22Mod=1   F12Mod=1   M11Mod=1   M22Mod=1   M12Mod=1   V13Mod=1   V23Mod=1 _
+         MMod=1   WMod=1
+
+TABLE:  "SOLID PROPERTY DEFINITIONS"
+    SolidProp=DalNur   Material=DalNur   MatAngleA=0   MatAngleB=0   MatAngleC=0   InComp=Yes   Color=Blue   TotalWt=0   TotalMass=0
+
+TABLE:  "JOINT COORDINATES"
+   Joint=1   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12576.7803   Y=41244.4774   Z=5400.0
+   Joint=2   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8576.7803   Y=41244.4774   Z=5400.0
+   Joint=3   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8576.7803   Y=36444.4774   Z=5400.0
+   Joint=4   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12576.7803   Y=36444.4774   Z=5400.0
+   Joint=5   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18876.7803   Y=30044.4774   Z=12900.0
+   Joint=6   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18876.7803   Y=38244.4774   Z=12900.0
+   Joint=7   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16176.7803   Y=38244.4774   Z=12900.0
+   Joint=8   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16176.7803   Y=34344.4774   Z=12900.0
+   Joint=9   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14076.7803   Y=34344.4774   Z=12900.0
+   Joint=10   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14076.7803   Y=30044.4774   Z=12900.0
+   Joint=11   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10676.7803   Y=38344.4774   Z=12900.0
+   Joint=12   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10676.7803   Y=41244.4774   Z=12900.0
+   Joint=13   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=41244.4774   Z=12900.0
+   Joint=14   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=38344.4774   Z=12900.0
+   Joint=15   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11176.7803   Y=30944.4774   Z=12900.0
+   Joint=16   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11176.7803   Y=36944.4774   Z=12900.0
+   Joint=17   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6476.7803   Y=36944.4774   Z=12900.0
+   Joint=18   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6476.7803   Y=30944.4774   Z=12900.0
+   Joint=19   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9076.7803   Y=30944.4774   Z=12900.0
+   Joint=20   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6476.7803   Y=30344.4774   Z=12600.0
+   Joint=21   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10276.7803   Y=30344.4774   Z=12600.0
+   Joint=22   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10276.7803   Y=33344.4774   Z=12600.0
+   Joint=23   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6476.7803   Y=33344.4774   Z=12600.0
+   Joint=24   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=37944.4774   Z=12600.0
+   Joint=25   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=34344.4774   Z=12600.0
+   Joint=26   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14676.7803   Y=34344.4774   Z=12600.0
+   Joint=27   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14676.7803   Y=30744.4774   Z=12600.0
+   Joint=28   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18576.7803   Y=30744.4774   Z=12600.0
+   Joint=29   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18576.7803   Y=37944.4774   Z=12600.0
+   Joint=30   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=30644.4774   Z=3900.0
+   Joint=31   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=32844.4774   Z=3900.0
+   Joint=32   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9476.7803   Y=32844.4774   Z=3900.0
+   Joint=33   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9476.7803   Y=30644.4774   Z=3900.0
+   Joint=34   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17276.7803   Y=36744.4774   Z=3900.0
+   Joint=35   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17276.7803   Y=40044.4774   Z=3900.0
+   Joint=36   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11276.7803   Y=40044.4774   Z=3900.0
+   Joint=37   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11276.7803   Y=36744.4774   Z=3900.0
+   Joint=38   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17977.5913   Y=37944.4774   Z=10800.0
+   Joint=39   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16777.5913   Y=37944.4774   Z=10800.0
+   Joint=40   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16777.5913   Y=35244.4774   Z=10800.0
+   Joint=41   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17977.5913   Y=35244.4774   Z=10800.0
+   Joint=42   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=29644.4774   Z=10800.0
+   Joint=43   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=33144.4774   Z=10800.0
+   Joint=44   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=33144.4774   Z=10800.0
+   Joint=45   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=29644.4774   Z=10800.0
+   Joint=46   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9476.7803   Y=37344.4774   Z=10800.0
+   Joint=47   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9476.7803   Y=40044.4774   Z=10800.0
+   Joint=48   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=40044.4774   Z=10800.0
+   Joint=49   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=37344.4774   Z=10800.0
+   Joint=50   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11476.7803   Y=28644.4774   Z=10800.0
+   Joint=51   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11476.7803   Y=30944.4774   Z=10800.0
+   Joint=52   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=30944.4774   Z=10800.0
+   Joint=53   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=28644.4774   Z=10800.0
+   Joint=54   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14876.7803   Y=38844.4774   Z=10800.0
+   Joint=55   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14876.7803   Y=40644.4774   Z=10800.0
+   Joint=56   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11276.7803   Y=40644.4774   Z=10800.0
+   Joint=57   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11276.7803   Y=38844.4774   Z=10800.0
+   Joint=58   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15276.7803   Y=29744.4774   Z=5100.0
+   Joint=59   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=29744.4774   Z=5100.0
+   Joint=60   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=31944.4774   Z=5100.0
+   Joint=61   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15276.7803   Y=31944.4774   Z=5100.0
+   Joint=62   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8276.7803   Y=29144.4774   Z=5100.0
+   Joint=63   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12676.7803   Y=29144.4774   Z=5100.0
+   Joint=64   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12676.7803   Y=32844.4774   Z=5100.0
+   Joint=65   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8276.7803   Y=32844.4774   Z=5100.0
+   Joint=66   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13176.7803   Y=36744.4774   Z=5100.0
+   Joint=67   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13176.7803   Y=41244.4774   Z=5100.0
+   Joint=68   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9176.7803   Y=41244.4774   Z=5100.0
+   Joint=69   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9176.7803   Y=36744.4774   Z=5100.0
+   Joint=70   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12476.7803   Y=36844.4774   Z=9600.0
+   Joint=71   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17676.7803   Y=36844.4774   Z=9600.0
+   Joint=72   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17676.7803   Y=40644.4774   Z=9600.0
+   Joint=73   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10376.7803   Y=40644.4774   Z=9600.0
+   Joint=74   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10376.7803   Y=39144.4774   Z=9600.0
+   Joint=75   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12476.7803   Y=39144.4774   Z=9600.0
+   Joint=76   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7338.7803   Y=33744.4774   Z=9600.0
+   Joint=77   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7338.7803   Y=28944.4774   Z=9600.0
+   Joint=78   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9076.7803   Y=28944.4774   Z=9600.0
+   Joint=79   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15076.7803   Y=28944.4774   Z=9600.0
+   Joint=80   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15076.7803   Y=30544.4774   Z=9600.0
+   Joint=81   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10276.7803   Y=30544.4774   Z=9600.0
+   Joint=82   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10276.7803   Y=32844.4774   Z=9600.0
+   Joint=83   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9676.7803   Y=32844.4774   Z=9600.0
+   Joint=84   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9676.7803   Y=33744.4774   Z=9600.0
+   Joint=85   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8576.7803   Y=35544.4774   Z=9600.0
+   Joint=86   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8576.7803   Y=38844.4774   Z=9600.0
+   Joint=87   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=38844.4774   Z=9600.0
+   Joint=88   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=35544.4774   Z=9600.0
+   Joint=89   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=29344.4774   Z=9600.0
+   Joint=90   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=31644.4774   Z=9600.0
+   Joint=91   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=31644.4774   Z=9600.0
+   Joint=92   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=29344.4774   Z=9600.0
+   Joint=93   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=36244.4774   Z=10200.0
+   Joint=94   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=40944.4774   Z=10200.0
+   Joint=95   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10676.7803   Y=40944.4774   Z=10200.0
+   Joint=96   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10676.7803   Y=38844.4774   Z=10200.0
+   Joint=97   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13676.7803   Y=38844.4774   Z=10200.0
+   Joint=98   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13676.7803   Y=36244.4774   Z=10200.0
+   Joint=99   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13276.7803   Y=30544.4774   Z=10200.0
+   Joint=100   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13276.7803   Y=34044.4774   Z=10200.0
+   Joint=101   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=34044.4774   Z=10200.0
+   Joint=102   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=28644.4774   Z=10200.0
+   Joint=103   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13876.7803   Y=28644.4774   Z=10200.0
+   Joint=104   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13876.7803   Y=30544.4774   Z=10200.0
+   Joint=105   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8876.7803   Y=39444.4774   Z=10200.0
+   Joint=106   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=39444.4774   Z=10200.0
+   Joint=107   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=35247.9735   Z=10200.0
+   Joint=108   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8876.7803   Y=35247.9735   Z=10200.0
+   Joint=109   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=29344.4774   Z=10200.0
+   Joint=110   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=32844.4774   Z=10200.0
+   Joint=111   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=32844.4774   Z=10200.0
+   Joint=112   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=29344.4774   Z=10200.0
+   Joint=113   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9776.7803   Y=37044.4774   Z=11100.0
+   Joint=114   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9776.7803   Y=40344.4774   Z=11100.0
+   Joint=115   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=40344.4774   Z=11100.0
+   Joint=116   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=37044.4774   Z=11100.0
+   Joint=117   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18277.5913   Y=37944.4774   Z=11100.0
+   Joint=118   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16777.5913   Y=37944.4774   Z=11100.0
+   Joint=119   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16777.5913   Y=35544.4774   Z=11100.0
+   Joint=120   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18277.5913   Y=35544.4774   Z=11100.0
+   Joint=121   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18576.7803   Y=29944.4774   Z=11100.0
+   Joint=122   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18576.7803   Y=33144.4774   Z=11100.0
+   Joint=123   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=33144.4774   Z=11100.0
+   Joint=124   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=29944.4774   Z=11100.0
+   Joint=125   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=28944.4774   Z=11100.0
+   Joint=126   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10876.7803   Y=28944.4774   Z=11100.0
+   Joint=127   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10876.7803   Y=30644.4774   Z=11100.0
+   Joint=128   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=30644.4774   Z=11100.0
+   Joint=129   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14276.7803   Y=38844.4774   Z=11100.0
+   Joint=130   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14276.7803   Y=40644.4774   Z=11100.0
+   Joint=131   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11576.7803   Y=40644.4774   Z=11100.0
+   Joint=132   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11576.7803   Y=38844.4774   Z=11100.0
+   Joint=133   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13676.7803   Y=38844.4774   Z=11400.0
+   Joint=134   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13676.7803   Y=40944.4774   Z=11400.0
+   Joint=135   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11576.7803   Y=40944.4774   Z=11400.0
+   Joint=136   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11576.7803   Y=38844.4774   Z=11400.0
+   Joint=137   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10072.7803   Y=36744.4774   Z=11400.0
+   Joint=138   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10072.7803   Y=40644.4774   Z=11400.0
+   Joint=139   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=40644.4774   Z=11400.0
+   Joint=140   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=36744.4774   Z=11400.0
+   Joint=141   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=30544.4774   Z=11400.0
+   Joint=142   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=33144.4774   Z=11400.0
+   Joint=143   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=33144.4774   Z=11400.0
+   Joint=144   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=30544.4774   Z=11400.0
+   Joint=145   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7676.7803   Y=29244.4774   Z=11400.0
+   Joint=146   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10276.7803   Y=29244.4774   Z=11400.0
+   Joint=147   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10276.7803   Y=30944.4774   Z=11400.0
+   Joint=148   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7676.7803   Y=30944.4774   Z=11400.0
+   Joint=149   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17977.5913   Y=37644.4774   Z=11400.0
+   Joint=150   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16477.5913   Y=37644.4774   Z=11400.0
+   Joint=151   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16477.5913   Y=35844.4774   Z=11400.0
+   Joint=152   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17977.5913   Y=35844.4774   Z=11400.0
+   Joint=153   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16976.7803   Y=36144.4774   Z=3600.0
+   Joint=154   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16976.7803   Y=39444.4774   Z=3600.0
+   Joint=155   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10976.7803   Y=39444.4774   Z=3600.0
+   Joint=156   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10976.7803   Y=36144.4774   Z=3600.0
+   Joint=157   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10076.7803   Y=30944.4774   Z=3600.0
+   Joint=158   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=30944.4774   Z=3600.0
+   Joint=159   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=33444.4774   Z=3600.0
+   Joint=160   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10076.7803   Y=33444.4774   Z=3600.0
+   Joint=161   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11276.7803   Y=37344.4774   Z=8400.0
+   Joint=162   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11276.7803   Y=40344.4774   Z=8400.0
+   Joint=163   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=40344.4774   Z=8400.0
+   Joint=164   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=37044.4774   Z=8400.0
+   Joint=165   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8276.7803   Y=37044.4774   Z=8400.0
+   Joint=166   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8276.7803   Y=37344.4774   Z=8400.0
+   Joint=167   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=39744.4774   Z=8400.0
+   Joint=168   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12776.7803   Y=39744.4774   Z=8400.0
+   Joint=169   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12776.7803   Y=36544.4774   Z=8400.0
+   Joint=170   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=36544.4774   Z=8400.0
+   Joint=171   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=39144.4774   Z=8400.0
+   Joint=172   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17376.7803   Y=29144.4774   Z=8400.0
+   Joint=173   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17376.7803   Y=32644.4774   Z=8400.0
+   Joint=174   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11476.7803   Y=32644.4774   Z=8400.0
+   Joint=175   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11476.7803   Y=29144.4774   Z=8400.0
+   Joint=176   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=31744.4774   Z=8400.0
+   Joint=177   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=30144.4774   Z=8400.0
+   Joint=178   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=30144.4774   Z=8400.0
+   Joint=179   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=31744.4774   Z=8400.0
+   Joint=180   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17376.7803   Y=29144.4774   Z=8100.0
+   Joint=181   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17376.7803   Y=33244.4774   Z=8100.0
+   Joint=182   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12076.7803   Y=33244.4774   Z=8100.0
+   Joint=183   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12076.7803   Y=29144.4774   Z=8100.0
+   Joint=184   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=39444.4774   Z=8100.0
+   Joint=185   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13076.7803   Y=39444.4774   Z=8100.0
+   Joint=186   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13076.7803   Y=36544.4774   Z=8100.0
+   Joint=187   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=36544.4774   Z=8100.0
+   Joint=188   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=39144.4774   Z=8100.0
+   Joint=189   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10976.7803   Y=36744.4774   Z=8100.0
+   Joint=190   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10976.7803   Y=39744.4774   Z=8100.0
+   Joint=191   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=39744.4774   Z=8100.0
+   Joint=192   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=36744.4774   Z=8100.0
+   Joint=193   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=32044.4774   Z=8100.0
+   Joint=194   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=30444.4774   Z=8100.0
+   Joint=195   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7676.7803   Y=30444.4774   Z=8100.0
+   Joint=196   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7676.7803   Y=32044.4774   Z=8100.0
+   Joint=197   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17976.7803   Y=36544.4774   Z=9900.0
+   Joint=198   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17976.7803   Y=40944.4774   Z=9900.0
+   Joint=199   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10676.7803   Y=40944.4774   Z=9900.0
+   Joint=200   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10676.7803   Y=38844.4774   Z=9900.0
+   Joint=201   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13076.7803   Y=38844.4774   Z=9900.0
+   Joint=202   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13076.7803   Y=36544.4774   Z=9900.0
+   Joint=203   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8276.7803   Y=28944.4774   Z=9900.0
+   Joint=204   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14476.7803   Y=28944.4774   Z=9900.0
+   Joint=205   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14476.7803   Y=30544.4774   Z=9900.0
+   Joint=206   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9776.7803   Y=30544.4774   Z=9900.0
+   Joint=207   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9776.7803   Y=33444.4774   Z=9900.0
+   Joint=208   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8276.7803   Y=33444.4774   Z=9900.0
+   Joint=209   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8876.7803   Y=35244.4774   Z=9900.0
+   Joint=210   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8876.7803   Y=39144.4774   Z=9900.0
+   Joint=211   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7676.7803   Y=39144.4774   Z=9900.0
+   Joint=212   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7676.7803   Y=35244.4774   Z=9900.0
+   Joint=213   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18576.7803   Y=29644.4774   Z=9900.0
+   Joint=214   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18576.7803   Y=32244.4774   Z=9900.0
+   Joint=215   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17376.7803   Y=32244.4774   Z=9900.0
+   Joint=216   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17376.7803   Y=29644.4774   Z=9900.0
+   Joint=217   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13776.7803   Y=36444.4774   Z=4800.0
+   Joint=218   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13776.7803   Y=40944.4774   Z=4800.0
+   Joint=219   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9776.7803   Y=40944.4774   Z=4800.0
+   Joint=220   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9776.7803   Y=36444.4774   Z=4800.0
+   Joint=221   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15276.7803   Y=29444.4774   Z=4800.0
+   Joint=222   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=29444.4774   Z=4800.0
+   Joint=223   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=31944.4774   Z=4800.0
+   Joint=224   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15276.7803   Y=31944.4774   Z=4800.0
+   Joint=225   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13276.7803   Y=32244.4774   Z=4800.0
+   Joint=226   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8576.7803   Y=32244.4774   Z=4800.0
+   Joint=227   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8576.7803   Y=29444.4774   Z=4800.0
+   Joint=228   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13276.7803   Y=29444.4774   Z=4800.0
+   Joint=229   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8276.7803   Y=28844.4774   Z=5400.0
+   Joint=230   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12076.7803   Y=28844.4774   Z=5400.0
+   Joint=231   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12076.7803   Y=33444.4774   Z=5400.0
+   Joint=232   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8276.7803   Y=33444.4774   Z=5400.0
+   Joint=233   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15576.7803   Y=30044.4774   Z=5400.0
+   Joint=234   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=30044.4774   Z=5400.0
+   Joint=235   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=31644.4774   Z=5400.0
+   Joint=236   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15576.7803   Y=31644.4774   Z=5400.0
+   Joint=237   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8876.7803   Y=35844.4774   Z=5700.0
+   Joint=238   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13676.7803   Y=35844.4774   Z=5700.0
+   Joint=239   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13676.7803   Y=38844.4774   Z=5700.0
+   Joint=240   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8876.7803   Y=38844.4774   Z=5700.0
+   Joint=241   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=29144.4774   Z=5700.0
+   Joint=242   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11476.7803   Y=29144.4774   Z=5700.0
+   Joint=243   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11476.7803   Y=34044.4774   Z=5700.0
+   Joint=244   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=34044.4774   Z=5700.0
+   Joint=245   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15276.7803   Y=30044.4774   Z=5700.0
+   Joint=246   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=30044.4774   Z=5700.0
+   Joint=247   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=31344.4774   Z=5700.0
+   Joint=248   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15276.7803   Y=31344.4774   Z=5700.0
+   Joint=249   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14276.7803   Y=35244.4774   Z=6000.0
+   Joint=250   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14276.7803   Y=38244.4774   Z=6000.0
+   Joint=251   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9176.7803   Y=38244.4774   Z=6000.0
+   Joint=252   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9176.7803   Y=35244.4774   Z=6000.0
+   Joint=253   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7676.7803   Y=29444.4774   Z=6000.0
+   Joint=254   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10876.7803   Y=29444.4774   Z=6000.0
+   Joint=255   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10876.7803   Y=34644.4774   Z=6000.0
+   Joint=256   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7676.7803   Y=34644.4774   Z=6000.0
+   Joint=257   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15576.7803   Y=30044.4774   Z=6000.0
+   Joint=258   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=30044.4774   Z=6000.0
+   Joint=259   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=31344.4774   Z=6000.0
+   Joint=260   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15576.7803   Y=31344.4774   Z=6000.0
+   Joint=261   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10276.7803   Y=34344.4774   Z=6300.0
+   Joint=262   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14876.7803   Y=34344.4774   Z=6300.0
+   Joint=263   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14876.7803   Y=37644.4774   Z=6300.0
+   Joint=264   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=37644.4774   Z=6300.0
+   Joint=265   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=29744.4774   Z=6300.0
+   Joint=266   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10276.7803   Y=29744.4774   Z=6300.0
+   Joint=267   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15276.7803   Y=30044.4774   Z=6300.0
+   Joint=268   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=30044.4774   Z=6300.0
+   Joint=269   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=31644.4774   Z=6300.0
+   Joint=270   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15276.7803   Y=31644.4774   Z=6300.0
+   Joint=271   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9776.7803   Y=30944.4774   Z=3300.0
+   Joint=272   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16376.7803   Y=30944.4774   Z=3300.0
+   Joint=273   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16376.7803   Y=33873.0222   Z=3300.0
+   Joint=274   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16376.7803   Y=34029.4053   Z=3300.0
+   Joint=275   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16376.7803   Y=35129.4053   Z=3300.0
+   Joint=276   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16376.7803   Y=36229.4053   Z=3300.0
+   Joint=277   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16376.7803   Y=39144.4774   Z=3300.0
+   Joint=278   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11276.7803   Y=39144.4774   Z=3300.0
+   Joint=279   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11276.7803   Y=33444.4774   Z=3300.0
+   Joint=280   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9776.7803   Y=33444.4774   Z=3300.0
+   Joint=281   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9776.7803   Y=31644.4774   Z=3300.0
+   Joint=282   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15076.7803   Y=30044.4774   Z=6600.0
+   Joint=283   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=30044.4774   Z=6600.0
+   Joint=284   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=31344.4774   Z=6600.0
+   Joint=285   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15076.7803   Y=31344.4774   Z=6600.0
+   Joint=286   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9676.7803   Y=34044.4774   Z=6600.0
+   Joint=287   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15476.7803   Y=34044.4774   Z=6600.0
+   Joint=288   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15476.7803   Y=38244.4774   Z=6600.0
+   Joint=289   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12576.7803   Y=38244.4774   Z=6600.0
+   Joint=290   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12576.7803   Y=37044.4774   Z=6600.0
+   Joint=291   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=37044.4774   Z=6600.0
+   Joint=292   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=30044.4774   Z=6600.0
+   Joint=293   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9676.7803   Y=30044.4774   Z=6600.0
+   Joint=294   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=33244.4774   Z=9300.0
+   Joint=295   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=29244.4774   Z=9300.0
+   Joint=296   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9676.7803   Y=29244.4774   Z=9300.0
+   Joint=297   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9676.7803   Y=32244.4774   Z=9300.0
+   Joint=298   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9676.7803   Y=33244.4774   Z=9300.0
+   Joint=299   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17376.7803   Y=37144.4774   Z=9300.0
+   Joint=300   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17376.7803   Y=40344.4774   Z=9300.0
+   Joint=301   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10676.7803   Y=40344.4774   Z=9300.0
+   Joint=302   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10676.7803   Y=38844.4774   Z=9300.0
+   Joint=303   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11876.7803   Y=38844.4774   Z=9300.0
+   Joint=304   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11876.7803   Y=37144.4774   Z=9300.0
+   Joint=305   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9676.7803   Y=28944.4774   Z=9300.0
+   Joint=306   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=28944.4774   Z=9300.0
+   Joint=307   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=31344.4774   Z=9300.0
+   Joint=308   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17176.7803   Y=31344.4774   Z=9300.0
+   Joint=309   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17176.7803   Y=30844.4774   Z=9300.0
+   Joint=310   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10876.7803   Y=30844.4774   Z=9300.0
+   Joint=311   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10876.7803   Y=32244.4774   Z=9300.0
+   Joint=312   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9676.7803   Y=32244.4774   Z=9300.0
+   Joint=313   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9676.7803   Y=29244.4774   Z=9300.0
+   Joint=314   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8576.7803   Y=35844.4774   Z=9300.0
+   Joint=315   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8576.7803   Y=38544.4774   Z=9300.0
+   Joint=316   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=38544.4774   Z=9300.0
+   Joint=317   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=35844.4774   Z=9300.0
+   Joint=318   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=29444.4774   Z=7800.0
+   Joint=319   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=33844.4774   Z=7800.0
+   Joint=320   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12076.7803   Y=33844.4774   Z=7800.0
+   Joint=321   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12076.7803   Y=29444.4774   Z=7800.0
+   Joint=322   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=32644.4774   Z=7800.0
+   Joint=323   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=30744.4774   Z=7800.0
+   Joint=324   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7676.7803   Y=30744.4774   Z=7800.0
+   Joint=325   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7676.7803   Y=32644.4774   Z=7800.0
+   Joint=326   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=39444.4774   Z=7800.0
+   Joint=327   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13376.7803   Y=39444.4774   Z=7800.0
+   Joint=328   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13376.7803   Y=36244.4774   Z=7800.0
+   Joint=329   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=36244.4774   Z=7800.0
+   Joint=330   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=39144.4774   Z=7800.0
+   Joint=331   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10376.7803   Y=35844.4774   Z=7800.0
+   Joint=332   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10376.7803   Y=39144.4774   Z=7800.0
+   Joint=333   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=39144.4774   Z=7800.0
+   Joint=334   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=35844.4774   Z=7800.0
+   Joint=335   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15076.7803   Y=36444.4774   Z=4200.0
+   Joint=336   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15076.7803   Y=40344.4774   Z=4200.0
+   Joint=337   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10976.7803   Y=40344.4774   Z=4200.0
+   Joint=338   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10976.7803   Y=36444.4774   Z=4200.0
+   Joint=339   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9176.7803   Y=30044.4774   Z=4200.0
+   Joint=340   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=30044.4774   Z=4200.0
+   Joint=341   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=32244.4774   Z=4200.0
+   Joint=342   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9176.7803   Y=32244.4774   Z=4200.0
+   Joint=343   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=39444.4774   Z=7500.0
+   Joint=344   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13676.7803   Y=39444.4774   Z=7500.0
+   Joint=345   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13676.7803   Y=34444.4774   Z=7500.0
+   Joint=346   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12076.7803   Y=34444.4774   Z=7500.0
+   Joint=347   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12076.7803   Y=31144.4774   Z=7500.0
+   Joint=348   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13576.7803   Y=31144.4774   Z=7500.0
+   Joint=349   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13576.7803   Y=30044.4774   Z=7500.0
+   Joint=350   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=30044.4774   Z=7500.0
+   Joint=351   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=39144.4774   Z=7500.0
+   Joint=352   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=33244.4774   Z=7500.0
+   Joint=353   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=31044.4774   Z=7500.0
+   Joint=354   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=31044.4774   Z=7500.0
+   Joint=355   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=33244.4774   Z=7500.0
+   Joint=356   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10076.7803   Y=35244.4774   Z=7500.0
+   Joint=357   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10076.7803   Y=38544.4774   Z=7500.0
+   Joint=358   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=38544.4774   Z=7500.0
+   Joint=359   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=35244.4774   Z=7500.0
+   Joint=360   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=32644.4774   Z=9000.0
+   Joint=361   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=29544.4774   Z=9000.0
+   Joint=362   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8476.7803   Y=29544.4774   Z=9000.0
+   Joint=363   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8476.7803   Y=32644.4774   Z=9000.0
+   Joint=364   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=37144.4774   Z=9000.0
+   Joint=365   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17076.7803   Y=40344.4774   Z=9000.0
+   Joint=366   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10676.7803   Y=40344.4774   Z=9000.0
+   Joint=367   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10676.7803   Y=39144.4774   Z=9000.0
+   Joint=368   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11276.7803   Y=39144.4774   Z=9000.0
+   Joint=369   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11276.7803   Y=37144.4774   Z=9000.0
+   Joint=370   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=28944.4774   Z=9000.0
+   Joint=371   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=31444.4774   Z=9000.0
+   Joint=372   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11476.7803   Y=31444.4774   Z=9000.0
+   Joint=373   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11476.7803   Y=31644.4774   Z=9000.0
+   Joint=374   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10276.7803   Y=31644.4774   Z=9000.0
+   Joint=375   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10276.7803   Y=28944.4774   Z=9000.0
+   Joint=376   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8576.7803   Y=36144.4774   Z=9000.0
+   Joint=377   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8576.7803   Y=39144.4774   Z=9000.0
+   Joint=378   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=39144.4774   Z=9000.0
+   Joint=379   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=36144.4774   Z=9000.0
+   Joint=380   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10322.5259   Y=36444.4774   Z=11700.0
+   Joint=381   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10322.5259   Y=40944.4774   Z=11700.0
+   Joint=382   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=40944.4774   Z=11700.0
+   Joint=383   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=36444.4774   Z=11700.0
+   Joint=384   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13076.7803   Y=38844.4774   Z=11700.0
+   Joint=385   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13076.7803   Y=40944.4774   Z=11700.0
+   Joint=386   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11276.7803   Y=40944.4774   Z=11700.0
+   Joint=387   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11276.7803   Y=38844.4774   Z=11700.0
+   Joint=388   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17977.5913   Y=37644.4774   Z=11700.0
+   Joint=389   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16777.5913   Y=37644.4774   Z=11700.0
+   Joint=390   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16777.5913   Y=35844.4774   Z=11700.0
+   Joint=391   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17977.5913   Y=35844.4774   Z=11700.0
+   Joint=392   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=31144.4774   Z=11700.0
+   Joint=393   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=33444.4774   Z=11700.0
+   Joint=394   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16176.7803   Y=33444.4774   Z=11700.0
+   Joint=395   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16176.7803   Y=31144.4774   Z=11700.0
+   Joint=396   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9676.7803   Y=28944.4774   Z=11700.0
+   Joint=397   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9676.7803   Y=31844.4774   Z=11700.0
+   Joint=398   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=31844.4774   Z=11700.0
+   Joint=399   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=28944.4774   Z=11700.0
+   Joint=400   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9346.7803   Y=29444.4774   Z=4500.0
+   Joint=401   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17246.7803   Y=29444.4774   Z=4500.0
+   Joint=402   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17246.7803   Y=31644.4774   Z=4500.0
+   Joint=403   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9346.7803   Y=31644.4774   Z=4500.0
+   Joint=404   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14376.7803   Y=36744.4774   Z=4500.0
+   Joint=405   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14376.7803   Y=40644.4774   Z=4500.0
+   Joint=406   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10376.7803   Y=40644.4774   Z=4500.0
+   Joint=407   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10376.7803   Y=36744.4774   Z=4500.0
+   Joint=408   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10376.7803   Y=37644.4774   Z=6900.0
+   Joint=409   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=37644.4774   Z=6900.0
+   Joint=410   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=32344.4774   Z=6900.0
+   Joint=411   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=30044.4774   Z=6900.0
+   Joint=412   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=30044.4774   Z=6900.0
+   Joint=413   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=32344.4774   Z=6900.0
+   Joint=414   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10276.7803   Y=32344.4774   Z=6900.0
+   Joint=415   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10276.7803   Y=33444.4774   Z=6900.0
+   Joint=416   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16076.7803   Y=33444.4774   Z=6900.0
+   Joint=417   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16076.7803   Y=38844.4774   Z=6900.0
+   Joint=418   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13476.7803   Y=38844.4774   Z=6900.0
+   Joint=419   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13476.7803   Y=36444.4774   Z=6900.0
+   Joint=420   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10376.7803   Y=36444.4774   Z=6900.0
+   Joint=421   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14776.7803   Y=30044.4774   Z=6900.0
+   Joint=422   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=30044.4774   Z=6900.0
+   Joint=423   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=31644.4774   Z=6900.0
+   Joint=424   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14776.7803   Y=31644.4774   Z=6900.0
+   Joint=425   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=32044.4774   Z=8700.0
+   Joint=426   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=29844.4774   Z=8700.0
+   Joint=427   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8176.7803   Y=29844.4774   Z=8700.0
+   Joint=428   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8176.7803   Y=32044.4774   Z=8700.0
+   Joint=429   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8276.7803   Y=36744.4774   Z=8700.0
+   Joint=430   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8276.7803   Y=39744.4774   Z=8700.0
+   Joint=431   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=39744.4774   Z=8700.0
+   Joint=432   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=36744.4774   Z=8700.0
+   Joint=433   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17976.7803   Y=28544.4774   Z=8700.0
+   Joint=434   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17976.7803   Y=32044.4774   Z=8700.0
+   Joint=435   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10876.7803   Y=32044.4774   Z=8700.0
+   Joint=436   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10876.7803   Y=28544.4774   Z=8700.0
+   Joint=437   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11576.7803   Y=37344.4774   Z=8700.0
+   Joint=438   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11576.7803   Y=40044.4774   Z=8700.0
+   Joint=439   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10676.7803   Y=40044.4774   Z=8700.0
+   Joint=440   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10676.7803   Y=37344.4774   Z=8700.0
+   Joint=441   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=36844.4774   Z=8700.0
+   Joint=442   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=40044.4774   Z=8700.0
+   Joint=443   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12476.7803   Y=40044.4774   Z=8700.0
+   Joint=444   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12476.7803   Y=36844.4774   Z=8700.0
+   Joint=445   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=29344.4774   Z=10500.0
+   Joint=446   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=40944.4774   Z=10500.0
+   Joint=447   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10976.7803   Y=40944.4774   Z=10500.0
+   Joint=448   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10976.7803   Y=38844.4774   Z=10500.0
+   Joint=449   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14276.7803   Y=38844.4774   Z=10500.0
+   Joint=450   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14276.7803   Y=36144.4774   Z=10500.0
+   Joint=451   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9176.7803   Y=36144.4774   Z=10500.0
+   Joint=452   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9176.7803   Y=39744.4774   Z=10500.0
+   Joint=453   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7676.7803   Y=39744.4774   Z=10500.0
+   Joint=454   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7676.7803   Y=28944.4774   Z=10500.0
+   Joint=455   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13276.7803   Y=28944.4774   Z=10500.0
+   Joint=456   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13276.7803   Y=32844.4774   Z=10500.0
+   Joint=457   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=32844.4774   Z=10500.0
+   Joint=458   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16776.7803   Y=29344.4774   Z=10500.0
+   Joint=459   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9076.7803   Y=32144.4774   Z=13500.0
+   Joint=460   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9076.7803   Y=30044.4774   Z=13500.0
+   Joint=461   CoordSys=GLOBAL   CoordType=Cartesian   XorR=19476.7803   Y=30044.4774   Z=13500.0
+   Joint=462   CoordSys=GLOBAL   CoordType=Cartesian   XorR=19476.7803   Y=38844.4774   Z=13500.0
+   Joint=463   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=38844.4774   Z=13500.0
+   Joint=464   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=32144.4774   Z=13500.0
+   Joint=465   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9676.7803   Y=30944.4774   Z=12000.0
+   Joint=466   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9676.7803   Y=32144.4774   Z=12000.0
+   Joint=467   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=32144.4774   Z=12000.0
+   Joint=468   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=28644.4774   Z=12000.0
+   Joint=469   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9076.7803   Y=28644.4774   Z=12000.0
+   Joint=470   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9076.7803   Y=30944.4774   Z=12000.0
+   Joint=471   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18277.5913   Y=37644.4774   Z=12000.0
+   Joint=472   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16777.5913   Y=37644.4774   Z=12000.0
+   Joint=473   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16777.5913   Y=35544.4774   Z=12000.0
+   Joint=474   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18277.5913   Y=35544.4774   Z=12000.0
+   Joint=475   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12476.7803   Y=38844.4774   Z=12000.0
+   Joint=476   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12476.7803   Y=40644.4774   Z=12000.0
+   Joint=477   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10976.7803   Y=40644.4774   Z=12000.0
+   Joint=478   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10976.7803   Y=38844.4774   Z=12000.0
+   Joint=479   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=31444.4774   Z=12000.0
+   Joint=480   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18276.7803   Y=33744.4774   Z=12000.0
+   Joint=481   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15576.7803   Y=33744.4774   Z=12000.0
+   Joint=482   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15576.7803   Y=31444.4774   Z=12000.0
+   Joint=483   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10676.7803   Y=36044.4774   Z=12000.0
+   Joint=484   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10676.7803   Y=40644.4774   Z=12000.0
+   Joint=485   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=40644.4774   Z=12000.0
+   Joint=486   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7376.7803   Y=36044.4774   Z=12000.0
+   Joint=487   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17976.7803   Y=31444.4774   Z=12300.0
+   Joint=488   CoordSys=GLOBAL   CoordType=Cartesian   XorR=17976.7803   Y=34044.4774   Z=12300.0
+   Joint=489   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15276.7803   Y=34044.4774   Z=12300.0
+   Joint=490   CoordSys=GLOBAL   CoordType=Cartesian   XorR=15276.7803   Y=31444.4774   Z=12300.0
+   Joint=491   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11876.7803   Y=40644.4774   Z=12300.0
+   Joint=492   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9476.7803   Y=40644.4774   Z=12300.0
+   Joint=493   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9476.7803   Y=40344.4774   Z=12300.0
+   Joint=494   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=40344.4774   Z=12300.0
+   Joint=495   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=35744.4774   Z=12300.0
+   Joint=496   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10976.7803   Y=35744.4774   Z=12300.0
+   Joint=497   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10976.7803   Y=38544.4774   Z=12300.0
+   Joint=498   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11876.7803   Y=38544.4774   Z=12300.0
+   Joint=499   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9976.7803   Y=30644.4774   Z=12300.0
+   Joint=500   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9976.7803   Y=32744.4774   Z=12300.0
+   Joint=501   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=32744.4774   Z=12300.0
+   Joint=502   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=28944.4774   Z=12300.0
+   Joint=503   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8476.7803   Y=28944.4774   Z=12300.0
+   Joint=504   CoordSys=GLOBAL   CoordType=Cartesian   XorR=8476.7803   Y=30644.4774   Z=12300.0
+   Joint=505   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18277.5913   Y=37944.4774   Z=12300.0
+   Joint=506   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16477.5913   Y=37944.4774   Z=12300.0
+   Joint=507   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16477.5913   Y=35544.4774   Z=12300.0
+   Joint=508   CoordSys=GLOBAL   CoordType=Cartesian   XorR=18277.5913   Y=35544.4774   Z=12300.0
+   Joint=509   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11276.7803   Y=41244.4774   Z=12600.0
+   Joint=510   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9476.7803   Y=41244.4774   Z=12600.0
+   Joint=511   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9476.7803   Y=40744.4774   Z=12600.0
+   Joint=512   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=40744.4774   Z=12600.0
+   Joint=513   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7076.7803   Y=35444.4774   Z=12600.0
+   Joint=514   CoordSys=GLOBAL   CoordType=Cartesian   XorR=11276.7803   Y=35444.4774   Z=12600.0
+   Joint=515   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10376.7803   Y=37944.4774   Z=7200.0
+   Joint=516   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=37944.4774   Z=7200.0
+   Joint=517   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=32944.4774   Z=7200.0
+   Joint=518   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=30744.4774   Z=7200.0
+   Joint=519   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=30744.4774   Z=7200.0
+   Joint=520   CoordSys=GLOBAL   CoordType=Cartesian   XorR=7976.7803   Y=32944.4774   Z=7200.0
+   Joint=521   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10576.7803   Y=32944.4774   Z=7200.0
+   Joint=522   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12076.7803   Y=32944.4774   Z=7200.0
+   Joint=523   CoordSys=GLOBAL   CoordType=Cartesian   XorR=12076.7803   Y=31744.4774   Z=7200.0
+   Joint=524   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14176.7803   Y=31744.4774   Z=7200.0
+   Joint=525   CoordSys=GLOBAL   CoordType=Cartesian   XorR=14176.7803   Y=30044.4774   Z=7200.0
+   Joint=526   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=30044.4774   Z=7200.0
+   Joint=527   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16476.7803   Y=39144.4774   Z=7200.0
+   Joint=528   CoordSys=GLOBAL   CoordType=Cartesian   XorR=16376.7803   Y=39144.4774   Z=7200.0
+   Joint=529   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13676.7803   Y=39144.4774   Z=7200.0
+   Joint=530   CoordSys=GLOBAL   CoordType=Cartesian   XorR=13676.7803   Y=35844.4774   Z=7200.0
+   Joint=531   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10376.7803   Y=35844.4774   Z=7200.0
+   Joint=532   CoordSys=GLOBAL   CoordType=Cartesian   XorR=19176.7803   Y=30344.4774   Z=13200.0
+   Joint=533   CoordSys=GLOBAL   CoordType=Cartesian   XorR=19176.7803   Y=38544.4774   Z=13200.0
+   Joint=534   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10076.7803   Y=38544.4774   Z=13200.0
+   Joint=535   CoordSys=GLOBAL   CoordType=Cartesian   XorR=10076.7803   Y=40844.4774   Z=13200.0
+   Joint=536   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=40844.4774   Z=13200.0
+   Joint=537   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6776.7803   Y=35544.4774   Z=13200.0
+   Joint=538   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6176.7803   Y=35544.4774   Z=13200.0
+   Joint=539   CoordSys=GLOBAL   CoordType=Cartesian   XorR=6176.7803   Y=31544.4774   Z=13200.0
+   Joint=540   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9076.7803   Y=31544.4774   Z=13200.0
+   Joint=541   CoordSys=GLOBAL   CoordType=Cartesian   XorR=9076.7803   Y=30344.4774   Z=13200.0
+   Joint=542   CoordSys=GLOBAL   CoordType=Cartesian   XorR=40716.7803   Y=30944.4774   Z=3000.0
+   Joint=543   CoordSys=GLOBAL   CoordType=Cartesian   XorR=40716.7803   Y=35844.4774   Z=3000.0
+   Joint=544   CoordSys=GLOBAL   CoordType=Cartesian   XorR=40516.7803   Y=35844.4774   Z=3000.0
+   Joint=545   CoordSys=GLOBAL   CoordType=Cartesian   XorR=40516.7803   Y=38544.4774   Z=3000.0
+   Joint=546   CoordSys=GLOBAL   CoordType=Cartesian   XorR=34416.7803   Y=38544.4774   Z=3000.0
+   Joint=547   CoordSys=GLOBAL   CoordType=Cartesian   XorR=34416.7803   Y=34344.4774   Z=3000.0
+   Joint=548   CoordSys=GLOBAL   CoordType=Cartesian   XorR=33216.7803   Y=34344.4774   Z=3000.0
+   Joint=549   CoordSys=GLOBAL   CoordType=Cartesian   XorR=33216.7803   Y=30944.4774   Z=3000.0
+
+TABLE:  "CONNECTIVITY - AREA"
+   Area=1   NumJoints=4   Joint1=1   Joint2=2   Joint3=3   Joint4=4   Order=1
+   Area=2   NumJoints=6   Joint1=5   Joint2=6   Joint3=7   Joint4=8   Order=1
+   Area=2   Joint1=9   Joint2=10   Order=2
+   Area=3   NumJoints=4   Joint1=11   Joint2=12   Joint3=13   Joint4=14   Order=1
+   Area=4   NumJoints=5   Joint1=15   Joint2=16   Joint3=17   Joint4=18   Order=1
+   Area=4   Joint1=19   Order=2
+   Area=5   NumJoints=4   Joint1=20   Joint2=21   Joint3=22   Joint4=23   Order=1
+   Area=6   NumJoints=6   Joint1=24   Joint2=25   Joint3=26   Joint4=27   Order=1
+   Area=6   Joint1=28   Joint2=29   Order=2
+   Area=7   NumJoints=4   Joint1=30   Joint2=31   Joint3=32   Joint4=33   Order=1
+   Area=8   NumJoints=4   Joint1=34   Joint2=35   Joint3=36   Joint4=37   Order=1
+   Area=9   NumJoints=4   Joint1=38   Joint2=39   Joint3=40   Joint4=41   Order=1
+   Area=10   NumJoints=4   Joint1=42   Joint2=43   Joint3=44   Joint4=45   Order=1
+   Area=11   NumJoints=4   Joint1=46   Joint2=47   Joint3=48   Joint4=49   Order=1
+   Area=12   NumJoints=4   Joint1=50   Joint2=51   Joint3=52   Joint4=53   Order=1
+   Area=13   NumJoints=4   Joint1=54   Joint2=55   Joint3=56   Joint4=57   Order=1
+   Area=14   NumJoints=4   Joint1=58   Joint2=59   Joint3=60   Joint4=61   Order=1
+   Area=15   NumJoints=4   Joint1=62   Joint2=63   Joint3=64   Joint4=65   Order=1
+   Area=16   NumJoints=4   Joint1=66   Joint2=67   Joint3=68   Joint4=69   Order=1
+   Area=17   NumJoints=6   Joint1=70   Joint2=71   Joint3=72   Joint4=73   Order=1
+   Area=17   Joint1=74   Joint2=75   Order=2
+   Area=18   NumJoints=9   Joint1=76   Joint2=77   Joint3=78   Joint4=79   Order=1
+   Area=18   Joint1=80   Joint2=81   Joint3=82   Joint4=83   Order=1
+   Area=18   Joint1=84   Order=3
+   Area=19   NumJoints=4   Joint1=85   Joint2=86   Joint3=87   Joint4=88   Order=1
+   Area=20   NumJoints=4   Joint1=89   Joint2=90   Joint3=91   Joint4=92   Order=1
+   Area=21   NumJoints=6   Joint1=93   Joint2=94   Joint3=95   Joint4=96   Order=1
+   Area=21   Joint1=97   Joint2=98   Order=2
+   Area=22   NumJoints=6   Joint1=99   Joint2=100   Joint3=101   Joint4=102   Order=1
+   Area=22   Joint1=103   Joint2=104   Order=2
+   Area=23   NumJoints=4   Joint1=105   Joint2=106   Joint3=107   Joint4=108   Order=1
+   Area=24   NumJoints=4   Joint1=109   Joint2=110   Joint3=111   Joint4=112   Order=1
+   Area=25   NumJoints=4   Joint1=113   Joint2=114   Joint3=115   Joint4=116   Order=1
+   Area=26   NumJoints=4   Joint1=117   Joint2=118   Joint3=119   Joint4=120   Order=1
+   Area=27   NumJoints=4   Joint1=121   Joint2=122   Joint3=123   Joint4=124   Order=1
+   Area=28   NumJoints=4   Joint1=125   Joint2=126   Joint3=127   Joint4=128   Order=1
+   Area=29   NumJoints=4   Joint1=129   Joint2=130   Joint3=131   Joint4=132   Order=1
+   Area=30   NumJoints=4   Joint1=133   Joint2=134   Joint3=135   Joint4=136   Order=1
+   Area=31   NumJoints=4   Joint1=137   Joint2=138   Joint3=139   Joint4=140   Order=1
+   Area=32   NumJoints=4   Joint1=141   Joint2=142   Joint3=143   Joint4=144   Order=1
+   Area=33   NumJoints=4   Joint1=145   Joint2=146   Joint3=147   Joint4=148   Order=1
+   Area=34   NumJoints=4   Joint1=149   Joint2=150   Joint3=151   Joint4=152   Order=1
+   Area=35   NumJoints=4   Joint1=153   Joint2=154   Joint3=155   Joint4=156   Order=1
+   Area=36   NumJoints=4   Joint1=157   Joint2=158   Joint3=159   Joint4=160   Order=1
+   Area=37   NumJoints=6   Joint1=161   Joint2=162   Joint3=163   Joint4=164   Order=1
+   Area=37   Joint1=165   Joint2=166   Order=2
+   Area=38   NumJoints=5   Joint1=167   Joint2=168   Joint3=169   Joint4=170   Order=1
+   Area=38   Joint1=171   Order=2
+   Area=39   NumJoints=4   Joint1=172   Joint2=173   Joint3=174   Joint4=175   Order=1
+   Area=40   NumJoints=4   Joint1=176   Joint2=177   Joint3=178   Joint4=179   Order=1
+   Area=41   NumJoints=4   Joint1=180   Joint2=181   Joint3=182   Joint4=183   Order=1
+   Area=42   NumJoints=5   Joint1=184   Joint2=185   Joint3=186   Joint4=187   Order=1
+   Area=42   Joint1=188   Order=2
+   Area=43   NumJoints=4   Joint1=189   Joint2=190   Joint3=191   Joint4=192   Order=1
+   Area=44   NumJoints=4   Joint1=193   Joint2=194   Joint3=195   Joint4=196   Order=1
+   Area=45   NumJoints=6   Joint1=197   Joint2=198   Joint3=199   Joint4=200   Order=1
+   Area=45   Joint1=201   Joint2=202   Order=2
+   Area=46   NumJoints=6   Joint1=203   Joint2=204   Joint3=205   Joint4=206   Order=1
+   Area=46   Joint1=207   Joint2=208   Order=2
+   Area=47   NumJoints=4   Joint1=209   Joint2=210   Joint3=211   Joint4=212   Order=1
+   Area=48   NumJoints=4   Joint1=213   Joint2=214   Joint3=215   Joint4=216   Order=1
+   Area=49   NumJoints=4   Joint1=217   Joint2=218   Joint3=219   Joint4=220   Order=1
+   Area=50   NumJoints=4   Joint1=221   Joint2=222   Joint3=223   Joint4=224   Order=1
+   Area=51   NumJoints=4   Joint1=225   Joint2=226   Joint3=227   Joint4=228   Order=1
+   Area=52   NumJoints=4   Joint1=229   Joint2=230   Joint3=231   Joint4=232   Order=1
+   Area=53   NumJoints=4   Joint1=233   Joint2=234   Joint3=235   Joint4=236   Order=1
+   Area=54   NumJoints=4   Joint1=237   Joint2=238   Joint3=239   Joint4=240   Order=1
+   Area=55   NumJoints=4   Joint1=241   Joint2=242   Joint3=243   Joint4=244   Order=1
+   Area=56   NumJoints=4   Joint1=245   Joint2=246   Joint3=247   Joint4=248   Order=1
+   Area=57   NumJoints=4   Joint1=249   Joint2=250   Joint3=251   Joint4=252   Order=1
+   Area=58   NumJoints=4   Joint1=253   Joint2=254   Joint3=255   Joint4=256   Order=1
+   Area=59   NumJoints=4   Joint1=257   Joint2=258   Joint3=259   Joint4=260   Order=1
+   Area=60   NumJoints=6   Joint1=261   Joint2=262   Joint3=263   Joint4=264   Order=1
+   Area=60   Joint1=265   Joint2=266   Order=2
+   Area=61   NumJoints=4   Joint1=267   Joint2=268   Joint3=269   Joint4=270   Order=1
+   Area=62   NumJoints=11   Joint1=271   Joint2=272   Joint3=273   Joint4=274   Order=1
+   Area=62   Joint1=275   Joint2=276   Joint3=277   Joint4=278   Order=1
+   Area=62   Joint1=279   Joint2=280   Joint3=281   Order=3
+   Area=63   NumJoints=4   Joint1=282   Joint2=283   Joint3=284   Joint4=285   Order=1
+   Area=64   NumJoints=8   Joint1=286   Joint2=287   Joint3=288   Joint4=289   Order=1
+   Area=64   Joint1=290   Joint2=291   Joint3=292   Joint4=293   Order=1
+   Area=65   NumJoints=5   Joint1=294   Joint2=295   Joint3=296   Joint4=297   Order=1
+   Area=65   Joint1=298   Order=2
+   Area=66   NumJoints=6   Joint1=299   Joint2=300   Joint3=301   Joint4=302   Order=1
+   Area=66   Joint1=303   Joint2=304   Order=2
+   Area=67   NumJoints=9   Joint1=305   Joint2=306   Joint3=307   Joint4=308   Order=1
+   Area=67   Joint1=309   Joint2=310   Joint3=311   Joint4=312   Order=1
+   Area=67   Joint1=313   Order=3
+   Area=68   NumJoints=4   Joint1=314   Joint2=315   Joint3=316   Joint4=317   Order=1
+   Area=69   NumJoints=4   Joint1=318   Joint2=319   Joint3=320   Joint4=321   Order=1
+   Area=70   NumJoints=4   Joint1=322   Joint2=323   Joint3=324   Joint4=325   Order=1
+   Area=71   NumJoints=5   Joint1=326   Joint2=327   Joint3=328   Joint4=329   Order=1
+   Area=71   Joint1=330   Order=2
+   Area=72   NumJoints=4   Joint1=331   Joint2=332   Joint3=333   Joint4=334   Order=1
+   Area=73   NumJoints=4   Joint1=335   Joint2=336   Joint3=337   Joint4=338   Order=1
+   Area=74   NumJoints=4   Joint1=339   Joint2=340   Joint3=341   Joint4=342   Order=1
+   Area=75   NumJoints=9   Joint1=343   Joint2=344   Joint3=345   Joint4=346   Order=1
+   Area=75   Joint1=347   Joint2=348   Joint3=349   Joint4=350   Order=1
+   Area=75   Joint1=351   Order=3
+   Area=76   NumJoints=4   Joint1=352   Joint2=353   Joint3=354   Joint4=355   Order=1
+   Area=77   NumJoints=4   Joint1=356   Joint2=357   Joint3=358   Joint4=359   Order=1
+   Area=78   NumJoints=4   Joint1=360   Joint2=361   Joint3=362   Joint4=363   Order=1
+   Area=79   NumJoints=6   Joint1=364   Joint2=365   Joint3=366   Joint4=367   Order=1
+   Area=79   Joint1=368   Joint2=369   Order=2
+   Area=80   NumJoints=6   Joint1=370   Joint2=371   Joint3=372   Joint4=373   Order=1
+   Area=80   Joint1=374   Joint2=375   Order=2
+   Area=81   NumJoints=4   Joint1=376   Joint2=377   Joint3=378   Joint4=379   Order=1
+   Area=82   NumJoints=4   Joint1=380   Joint2=381   Joint3=382   Joint4=383   Order=1
+   Area=83   NumJoints=4   Joint1=384   Joint2=385   Joint3=386   Joint4=387   Order=1
+   Area=84   NumJoints=4   Joint1=388   Joint2=389   Joint3=390   Joint4=391   Order=1
+   Area=85   NumJoints=4   Joint1=392   Joint2=393   Joint3=394   Joint4=395   Order=1
+   Area=86   NumJoints=4   Joint1=396   Joint2=397   Joint3=398   Joint4=399   Order=1
+   Area=87   NumJoints=4   Joint1=400   Joint2=401   Joint3=402   Joint4=403   Order=1
+   Area=88   NumJoints=4   Joint1=404   Joint2=405   Joint3=406   Joint4=407   Order=1
+   Area=89   NumJoints=13   Joint1=408   Joint2=409   Joint3=410   Joint4=411   Order=1
+   Area=89   Joint1=412   Joint2=413   Joint3=414   Joint4=415   Order=1
+   Area=89   Joint1=416   Joint2=417   Joint3=418   Joint4=419   Order=2
+   Area=89   Joint1=420   Order=4
+   Area=90   NumJoints=4   Joint1=421   Joint2=422   Joint3=423   Joint4=424   Order=1
+   Area=91   NumJoints=4   Joint1=425   Joint2=426   Joint3=427   Joint4=428   Order=1
+   Area=92   NumJoints=4   Joint1=429   Joint2=430   Joint3=431   Joint4=432   Order=1
+   Area=93   NumJoints=4   Joint1=433   Joint2=434   Joint3=435   Joint4=436   Order=1
+   Area=94   NumJoints=4   Joint1=437   Joint2=438   Joint3=439   Joint4=440   Order=1
+   Area=95   NumJoints=4   Joint1=441   Joint2=442   Joint3=443   Joint4=444   Order=1
+   Area=96   NumJoints=14   Joint1=445   Joint2=446   Joint3=447   Joint4=448   Order=1
+   Area=96   Joint1=449   Joint2=450   Joint3=451   Joint4=452   Order=1
+   Area=96   Joint1=453   Joint2=454   Joint3=455   Joint4=456   Order=2
+   Area=96   Joint1=457   Joint2=458   Order=4
+   Area=97   NumJoints=6   Joint1=459   Joint2=460   Joint3=461   Joint4=462   Order=1
+   Area=97   Joint1=463   Joint2=464   Order=2
+   Area=98   NumJoints=6   Joint1=465   Joint2=466   Joint3=467   Joint4=468   Order=1
+   Area=98   Joint1=469   Joint2=470   Order=2
+   Area=99   NumJoints=4   Joint1=471   Joint2=472   Joint3=473   Joint4=474   Order=1
+   Area=100   NumJoints=4   Joint1=475   Joint2=476   Joint3=477   Joint4=478   Order=1
+   Area=101   NumJoints=4   Joint1=479   Joint2=480   Joint3=481   Joint4=482   Order=1
+   Area=102   NumJoints=4   Joint1=483   Joint2=484   Joint3=485   Joint4=486   Order=1
+   Area=103   NumJoints=4   Joint1=487   Joint2=488   Joint3=489   Joint4=490   Order=1
+   Area=104   NumJoints=8   Joint1=491   Joint2=492   Joint3=493   Joint4=494   Order=1
+   Area=104   Joint1=495   Joint2=496   Joint3=497   Joint4=498   Order=1
+   Area=105   NumJoints=6   Joint1=499   Joint2=500   Joint3=501   Joint4=502   Order=1
+   Area=105   Joint1=503   Joint2=504   Order=2
+   Area=106   NumJoints=4   Joint1=505   Joint2=506   Joint3=507   Joint4=508   Order=1
+   Area=107   NumJoints=6   Joint1=509   Joint2=510   Joint3=511   Joint4=512   Order=1
+   Area=107   Joint1=513   Joint2=514   Order=2
+   Area=108   NumJoints=17   Joint1=515   Joint2=516   Joint3=517   Joint4=518   Order=1
+   Area=108   Joint1=519   Joint2=520   Joint3=521   Joint4=522   Order=1
+   Area=108   Joint1=523   Joint2=524   Joint3=525   Joint4=526   Order=2
+   Area=108   Joint1=527   Joint2=528   Joint3=529   Joint4=530   Order=3
+   Area=108   Joint1=531   Order=5
+   Area=109   NumJoints=10   Joint1=532   Joint2=533   Joint3=534   Joint4=535   Order=1
+   Area=109   Joint1=536   Joint2=537   Joint3=538   Joint4=539   Order=1
+   Area=109   Joint1=540   Joint2=541   Order=3
+   Area=111   NumJoints=8   Joint1=542   Joint2=543   Joint3=544   Joint4=545   Order=1
+   Area=111   Joint1=546   Joint2=547   Joint3=548   Joint4=549   Order=1
+
