@@ -6,7 +6,7 @@ import math
 import os
 
 #file_path ="C://Users//Ye//Documents//PycharmProjects//py2s2k//s2k//test.s2k"
-file_path = "C://Users//Ye//Documents//PycharmProjects//py2s2k//s2k//XYS_v1.0 jsj-1.2m-restraint.s2k"
+file_path = "C://Users//Ye//Documents//PycharmProjects//py2s2k//s2k//sys-model-jsj-0.8m-V2.s2k"
 
 
 
@@ -98,7 +98,7 @@ def connect_joint_area(data_joint_label_all,data_frame_joint_label,close_area,jo
             # dist = joint_area_dist[i]
             # eqv_r = math.sqrt(area_value)/2
             d1 = point2area_distance(p1, p2, p3, p4)
-            if d1 < 50:
+            if d1 < math.sqrt(area_value)/100:
                 area_j = data_area_joint_link[area_item]
                 j_m_r.append([data_joint[i][0], area_j])
                 print("area", data_area[area_item][0], "joint,area_joint", data_joint[i][0], area_j, "d1=", d1)
